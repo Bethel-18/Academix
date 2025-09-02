@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedStudyBuddy - AI-Powered Medical Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>MedStudyBuddy</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#flashcards">Flashcards</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#textbooks">Textbooks</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>AI-Powered Medical Learning Platform</h2>
+            <p>Study smarter, not harder with our comprehensive medical education platform featuring AI flashcards, video resources, and interactive learning tools.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-large">Get Started</button>
+                <button class="btn btn-outline btn-large">Watch Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Powerful Learning Features</h2>
+                <p>Everything you need to excel in your medical studies</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Textbook Library</h3>
+                    <p>Access a vast collection of medical textbooks and study materials for all subjects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Study Buddy</h3>
+                    <p>Get explanations for any highlighted text with our advanced AI assistant.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Video Resources</h3>
+                    <p>Simplify complex concepts with curated YouTube videos embedded in our platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Interactive Games</h3>
+                    <p>Activate your mind before studying with fun medical-themed games.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Study Reminders</h3>
+                    <p>Never miss a study session with our smart reminder system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Senior Connection</h3>
+                    <p>Get advice and encouragement from seniors who've been through it before.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flashcard Generator -->
+    <section class="flashcard-generator" id="flashcards">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Flashcard Generator</h2>
+                <p>Transform your study notes into interactive flashcards with our AI technology</p>
+            </div>
+            <div class="generator-container">
+                <div class="input-section">
+                    <h3>Enter Your Study Notes</h3>
+                    <textarea id="notes-input" placeholder="Paste your medical study notes here...">Mitochondria are known as the powerhouses of the cell. They generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy. Homeostasis is the tendency of biological systems to maintain relatively constant conditions in the internal environment.</textarea>
+                    <button class="btn btn-primary" id="generate-flashcards">Generate Flashcards</button>
+                </div>
+                <div class="output-section" id="flashcards-output">
+                    <div class="flashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <p>What is the function of the mitochondria?</p>
+                            </div>
+                            <div class="flashcard-back">
+                                <p>Mitochondria are known as the powerhouses of the cell. They generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <p>Define the term "homeostasis"</p>
+                            </div>
+                            <div class="flashcard-back">
+                                <p>Homeostasis is the tendency of biological systems to maintain relatively constant conditions in the internal environment while continuously interacting with and adjusting to changes originating within or outside the system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Medical Courses</h2>
+                <p>Structured and organized courses for all medical subjects</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Anatomy</h3>
+                        <p>Study the structure of the human body and its parts.</p>
+                        <button class="btn btn-primary">Explore</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Physiology</h3>
+                        <p>Learn how the human body functions and maintains life.</p>
+                        <button class="btn btn-primary">Explore</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="course-content">
+                        <h3>Biochemistry</h3>
+                        <p>Explore the chemical processes within living organisms.</p>
+                        <button class="btn btn-primary">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Textbook Library -->
+    <section class="textbook-library" id="textbooks">
+        <div class="container">
+            <div class="section-title">
+                <h2>Textbook Library</h2>
+                <p>Access essential medical textbooks and resources</p>
+            </div>
+            <div class="textbooks-grid">
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fas fa-book-medical"></i>
+                    </div>
+                    <h3>Gray's Anatomy</h3>
+                    <p>The classic anatomical reference for medical students</p>
+                    <button class="btn btn-primary">Read Now</button>
+                </div>
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Guyton Physiology</h3>
+                    <p>Comprehensive textbook of medical physiology</p>
+                    <button class="btn btn-primary">Read Now</button>
+                </div>
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Harper's Biochemistry</h3>
+                    <p>Essential concepts in biochemistry</p>
+                    <button class="btn btn-primary">Read Now</button>
+                </div>
+                <div class="textbook-card">
+                    <div class="textbook-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Katzung Pharmacology</h3>
+                    <p>Comprehensive guide to pharmacological principles</p>
+                    <button class="btn btn-primary">Read Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Resources -->
+    <section class="video-resources" id="videos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Video Resources</h2>
+                <p>Visual explanations of complex medical concepts</p>
+            </div>
+            <div class="videos-container">
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="video-content">
+                        <h3>Cardiac Physiology</h3>
+                        <p>Understand the functioning of the heart and circulatory system</p>
+                        <button class="btn btn-accent">Watch Video</button>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="video-content">
+                        <h3>Neuroanatomy</h3>
+                        <p>Learn about the structure of the nervous system</p>
+                        <button class="btn btn-accent">Watch Video</button>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-placeholder">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="video-content">
+                        <h3>Biochemical Pathways</h3>
+                        <p>Visualize complex metabolic processes</p>
+                        <button class="btn btn-accent">Watch Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Demo -->
+    <section class="ai-assistant">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Study Assistant</h2>
+                <p>Highlight any text to get instant explanations</p>
+            </div>
+            <div class="ai-demo">
+                <div class="sample-text">
+                    <p>The <span class="highlightable">mitochondrion</span> is a double-membrane-bound organelle found in most eukaryotic organisms. The <span class="highlightable">Krebs cycle</span> (also known as the citric acid cycle or TCA cycle) is a series of chemical reactions used by all aerobic organisms to generate energy through the oxidation of acetyl-CoA derived from carbohydrates, fats, and proteins. <span class="highlightable">Homeostasis</span> is the state of steady internal, physical, and chemical conditions maintained by living systems.</p>
+                </div>
+                <button class="btn btn-primary" id="simulate-highlight">Simulate Text Highlight</button>
+                <div class="ai-response" id="ai-response">
+                    <h4>AI Explanation:</h4>
+                    <p>The <strong>Krebs cycle</strong> is a key part of cellular respiration where energy stored in carbohydrates, fats, and proteins is released through a series of chemical reactions. It takes place in the mitochondria and produces ATP, which is the main energy currency of cells.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MedStudyBuddy</h3>
+                    <p>The ultimate AI-powered medical study platform designed to help students learn more effectively.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#flashcards">Flashcards</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#textbooks">Textbooks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MedStudyBuddy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Flashcard flip functionality
+        document.querySelectorAll('.flashcard').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('flipped');
+            });
+        });
+
+        // Simulate flashcard generation
+        document.getElementById('generate-flashcards').addEventListener('click', function() {
+            const textarea = document.getElementById('notes-input');
+            const output = document.getElementById('flashcards-output');
+            
+            if (textarea.value.trim() !== '') {
+                // Clear existing flashcards
+                output.innerHTML = '';
+                
+                // Create sample flashcards based on input
+                const flashcards = [
+                    { front: 'What is the function of mitochondria?', back: 'Mitochondria generate most of the cell\'s supply of adenosine triphosphate (ATP), used as a source of chemical energy.' },
+                    { front: 'Define homeostasis', back: 'Homeostasis is the tendency of biological systems to maintain relatively constant conditions in the internal environment.' },
+                    { front: 'What is the main energy currency of cells?', back: 'ATP (adenosine triphosphate) is the main energy currency of cells.' }
+                ];
+                
+                // Add new flashcards
+                flashcards.forEach(flashcard => {
+                    const cardElement = document.createElement('div');
+                    cardElement.className = 'flashcard';
+                    cardElement.innerHTML = `
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <p>${flashcard.front}</p>
+                            </div>
+                            <div class="flashcard-back">
+                                <p>${flashcard.back}</p>
+                            </div>
+                        </div>
+                    `;
+                    output.appendChild(cardElement);
+                    
+                    // Add flip functionality to new cards
+                    cardElement.addEventListener('click', function() {
+                        this.classList.toggle('flipped');
+                    });
+                });
+                
+                alert('Flashcards generated successfully! In a real application, this would connect to the Hugging Face API to generate flashcards from your notes.');
+            } else {
+                alert('Please enter some study notes first.');
+            }
+        });
+
+        // AI Assistant simulation
+        document.getElementById('simulate-highlight').addEventListener('click', function() {
+            const response = document.getElementById('ai-response');
+            response.classList.add('show');
+        });
+
+        // Simulate text highlighting
+        document.querySelectorAll('.highlightable').forEach(element => {
+            element.addEventListener('click', function() {
+                const response = document.getElementById('ai-response');
+                response.innerHTML = `
+                    <h4>AI Explanation of "${this.textContent}":</h4>
+                    <p>${this.textContent} is an important concept in medical science. In a real application, the AI would provide a detailed explanation of this term based on advanced natural language processing.</p>
+                `;
+                response.classList.add('show');
+            });
+        });
+    </script>
+</body>
+</html>
